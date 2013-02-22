@@ -30,7 +30,7 @@
 - (id) init {
     if (self = [super init]) {
 		NSCalendar *calendar =
-        [[NSCalendar alloc] initWithCalendarIdentifier: NSGregorianCalendar];
+        [[NSCalendar alloc] initWithCalendarIdentifier: NSHebrewCalendar];
         
 		NSDate *today = [[NSDate alloc] init];
 		NSUInteger unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
@@ -48,7 +48,7 @@
 
 - (int) monthLength {
 	NSCalendar *calendar = [[NSCalendar alloc]
-                            initWithCalendarIdentifier: NSGregorianCalendar
+                            initWithCalendarIdentifier: NSHebrewCalendar
                             ];
     
 	NSDateComponents *components = [[NSDateComponents alloc] init];
